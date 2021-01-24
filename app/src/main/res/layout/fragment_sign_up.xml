@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/sign_up_frame_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/Theme.AppCompat.NoActionBar"
+    tools:context=".sign_up_fragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:theme="@style/Theme.AppCompat.NoActionBar">
+
+        <ImageView
+            android:id="@+id/img_logo_register"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp"
+            android:src="@drawable/logo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/img_songchimp_register"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/song_chimp_text_register"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/img_logo_register" />
+
+        <TextView
+            android:id="@+id/tv_register_register"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:fontFamily="@font/product_sans_regular"
+            android:gravity="center_horizontal"
+            android:text="R E G I S T E R"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="16dp"
+            app:layout_constraintEnd_toEndOf="@+id/img_songchimp_register"
+            app:layout_constraintStart_toStartOf="@+id/img_songchimp_register"
+            app:layout_constraintTop_toBottomOf="@+id/img_songchimp_register" />
+
+        <EditText
+            android:id="@+id/email_address_register"
+            android:layout_width="match_parent"
+            android:layout_height="47dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="52dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginRight="40dp"
+            android:background="#161F54C3"
+            android:ems="50"
+            android:fontFamily="@font/product_sans_regular"
+            android:hint="Enter E-mail Address"
+            android:inputType="textEmailAddress"
+            android:paddingLeft="50dp"
+            android:textColor="#FFFFFF"
+            android:textSize="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_register_register" />
+
+        <EditText
+            android:id="@+id/password_register"
+            android:layout_width="0dp"
+            android:layout_height="47dp"
+            android:layout_marginTop="24dp"
+            android:background="#161F54C3"
+            android:ems="50"
+            android:fontFamily="@font/product_sans_regular"
+            android:hint="Enter Password"
+            android:inputType="textPassword"
+            android:paddingLeft="50dp"
+            android:textColor="#FFFFFF"
+            android:textSize="15dp"
+            app:layout_constraintEnd_toEndOf="@+id/email_address_register"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/email_address_register"
+            app:layout_constraintTop_toBottomOf="@+id/email_address_register" />
+
+        <EditText
+            android:id="@+id/confirm_Password_register"
+            android:layout_width="0dp"
+            android:layout_height="47dp"
+            android:layout_marginTop="24dp"
+            android:background="#161F54C3"
+            android:ems="50"
+            android:fontFamily="@font/product_sans_regular"
+            android:hint="Confirm Password"
+            android:inputType="textPassword"
+            android:paddingLeft="50dp"
+            android:textColor="#FFFFFF"
+            android:textSize="15dp"
+            app:layout_constraintEnd_toEndOf="@+id/password_register"
+            app:layout_constraintStart_toStartOf="@+id/password_register"
+            app:layout_constraintTop_toBottomOf="@+id/password_register" />
+
+        <Button
+            android:id="@+id/btn_register"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:background="@color/colorAccent"
+            android:enabled="false"
+            android:fontFamily="@font/product_sans_regular"
+            android:text="REGISTER"
+            android:textSize="15dp"
+            app:layout_constraintEnd_toEndOf="@+id/confirm_Password_register"
+            app:layout_constraintStart_toStartOf="@+id/confirm_Password_register"
+            app:layout_constraintTop_toBottomOf="@+id/confirm_Password_register" />
+
+
+        <TextView
+            android:id="@+id/tv_already_have_an_account"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginRight="30dp"
+            android:fontFamily="@font/product_sans_regular"
+            android:gravity="center_horizontal"
+            android:text="Already have an account?"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/progressBar_register" />
+
+        <ImageView
+            android:id="@+id/img_email_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:src="@drawable/ic_mail_outline_24px"
+            android:tint="@color/colorAccent"
+            app:layout_constraintBottom_toBottomOf="@+id/email_address_register"
+            app:layout_constraintStart_toStartOf="@+id/email_address_register"
+            app:layout_constraintTop_toTopOf="@+id/email_address_register" />
+
+        <ImageView
+            android:id="@+id/img_passlock1_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:src="@drawable/privacy"
+            app:layout_constraintBottom_toBottomOf="@+id/password_register"
+            app:layout_constraintStart_toStartOf="@+id/password_register"
+            app:layout_constraintTop_toTopOf="@+id/password_register" />
+
+        <ImageView
+            android:id="@+id/img_passlock2_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:src="@drawable/privacy"
+            app:layout_constraintBottom_toBottomOf="@+id/confirm_Password_register"
+            app:layout_constraintHorizontal_bias="0.005"
+            app:layout_constraintStart_toStartOf="@+id/confirm_Password_register"
+            app:layout_constraintTop_toTopOf="@+id/confirm_Password_register" />
+
+        <TextView
+            android:id="@+id/tv_login_register"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="180dp"
+            android:layout_marginLeft="180dp"
+            android:layout_marginTop="22dp"
+            android:fontFamily="@font/product_sans_regular"
+            android:gravity="center_horizontal"
+            android:text="Login"
+            android:textAlignment="center"
+            android:textColor="@color/colorAccent"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/progressBar_register" />
+
+        <ProgressBar
+            android:id="@+id/progressBar_register"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="33dp"
+            android:layout_height="33dp"
+            android:indeterminateTint="@color/colorAccent"
+            android:layout_marginTop="100dp"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toEndOf="@+id/btn_register"
+            app:layout_constraintStart_toStartOf="@+id/btn_register"
+            app:layout_constraintTop_toBottomOf="@+id/confirm_Password_register" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

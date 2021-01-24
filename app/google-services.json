@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "659889641496",
+    "firebase_url": "https://song-chimp.firebaseio.com",
+    "project_id": "song-chimp",
+    "storage_bucket": "song-chimp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:659889641496:android:5f3cfdd4e5923e9b65cb6d",
+        "android_client_info": {
+          "package_name": "com.example.songchimp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "659889641496-qo429dl7c98i5987porr5t3brhtnuhir.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCv_yoFVOeYJ2OXh9kBkoW8wts3bw9ahfM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "659889641496-qo429dl7c98i5987porr5t3brhtnuhir.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
